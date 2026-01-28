@@ -533,6 +533,7 @@ story7=[
 parser = argparse.ArgumentParser()
 parser.add_argument('--base_model_path', default=r"stabilityai/stable-diffusion-xl-base-1.0", type=str)
 parser.add_argument('--image_encoder_path', type=str, default=r"./ipadapter/sdxl_models/image_encoder")
+parser.add_argument('--openpose_path', type=str, default=r"./180_Openposes")
 parser.add_argument('--ip_ckpt', default=r"./ip-adapter_sdxl.bin", type=str)
 parser.add_argument('--style', type=str, default='film', choices=["comic","film","realistic"])
 parser.add_argument('--device', default="cuda", type=str)
@@ -590,9 +591,7 @@ pipe = StableDiffusionXLControlNetPipeline.from_pretrained(
     safety_checker=None
 )
 
-
-
-seed = 42
+seed = random.randint(0, 100000)
 print(seed)
 
 storyiter = StoryIterXLControlnet(pipe, image_encoder_path, ip_ckpt, device)
@@ -612,7 +611,7 @@ prompts = fixing_prompts
 os.makedirs(f'./story', exist_ok=True)
 os.makedirs(f'./story/results_xl', exist_ok=True)
 
-openpose_root = './180_Openposes'
+openpose_root = args.openpose_path
 openpose_files = os.listdir(openpose_root)[:len(prompts)]
 
 
@@ -647,3 +646,4 @@ for i, scale in enumerate(scales):
         grid = image_grid(image, 1, 1)
         grid.save(f'./story/results_xl{i+1}/img_{y}.png')
     images = new_images
+
