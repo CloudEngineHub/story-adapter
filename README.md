@@ -121,7 +121,6 @@ comic style:
 ~~~
 python run.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path your_path/IP-Adapter/sdxl_models/image_encoder --ip_ckpt your_path/IP-Adapter/sdxl_models/ip-adapter_sdxl.bin --style comic
 ~~~
-<br>
 
 <img src="./docs/style_comic.png" width="1080"/>
 
@@ -131,8 +130,6 @@ film style:
 ~~~
 python run.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path your_path/IP-Adapter/sdxl_models/image_encoder --ip_ckpt your_path/IP-Adapter/sdxl_models/ip-adapter_sdxl.bin --style film
 ~~~
-<br>
-
 <img src="./docs/style_film.png" width="1080"/>
 
 <be>
@@ -141,11 +138,8 @@ realistic style:
 ~~~
 python run.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path your_path/IP-Adapter/sdxl_models/image_encoder --ip_ckpt your_path/IP-Adapter/sdxl_models/ip-adapter_sdxl.bin --style realistic
 ~~~
-<br>
 
 <img src="./docs/style_realistic.png" width="1080"/>
-
-<be>
 
 ### Fast running with LCM
 ~~~
@@ -154,16 +148,12 @@ python run_fast.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_pa
 
 <img src="./docs/story_fast.jpg" width="1080"/>
 
-<br>
-
 ### Running with ControlNet
 ~~~
 python run_controlnet.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path your_path/IP-Adapter/sdxl_models/image_encoder --ip_ckpt your_path/IP-Adapter/sdxl_models/ip-adapter_sdxl.bin 
 ~~~
 
 <img src="./docs/controlnet.jpg" width="1080"/>
-
-<br>
 
 ## Acknowledgement 🍻
 
