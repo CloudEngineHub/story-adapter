@@ -109,10 +109,8 @@ Note: Regarding custom stories, we suggest the template [Character Definition + 
 <img src="./docs/comic1.png" width="1080"/>
 
 <br>
-<br>
 <img src="./docs/comic7.png" width="1080"/>
 
-<br>
 <br>
 <img src="./docs/comic3.png" width="1080"/>
 
