@@ -32,6 +32,8 @@ The repository contains the official implementation of "Story-Adapter".
 ## News 🚀
 * **2024.10.10**: [Paper](https://arxiv.org/abs/2410.06244) is released on ArXiv.
 * **2024.10.04**: Code released.
+* **2026.01.27**: Fast version released, visualizing a 100-frame story over 10 iterations takes only 20 minutes.
+* **2026.01.27**: ControlNet version released, supporting openPose skeletons as control signals.
 
 ## Framework 🤖 
 
