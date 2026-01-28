@@ -523,7 +523,7 @@ pipe.scheduler = LCMScheduler.from_config(pipe.scheduler.config)
 pipe.to("cuda")
 
 
-seed = 42
+seed = random.randint(0, 100000)
 print(seed)
 
 
@@ -572,3 +572,4 @@ for i, scale in enumerate(scales):
         grid = image_grid(image, 1, 1)
         grid.save(f'./story/results_xl{i+1}/img_{y}.png')
     images = new_images
+
