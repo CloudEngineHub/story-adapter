@@ -148,16 +148,18 @@ python run.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path yo
 <be>
 
 ### Fast running with LCM
-
-<br>
+~~~
+python run_fast.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path your_path/IP-Adapter/sdxl_models/image_encoder --ip_ckpt your_path/IP-Adapter/sdxl_models/ip-adapter_sdxl.bin 
+~~~
 
 <img src="./docs/story_fast.jpg" width="1080"/>
 
 <br>
 
 ### Running with ControlNet
-
-<br>
+~~~
+python run_controlnet.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path your_path/IP-Adapter/sdxl_models/image_encoder --ip_ckpt your_path/IP-Adapter/sdxl_models/ip-adapter_sdxl.bin 
+~~~
 
 <img src="./docs/controlnet.jpg" width="1080"/>
 
