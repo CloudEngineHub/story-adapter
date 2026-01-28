@@ -147,6 +147,21 @@ python run.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path yo
 
 <be>
 
+### Fast running with LCM
+
+<br>
+
+<img src="./docs/comic1.png" width="1080"/>
+
+<br>
+
+### Running with ControlNet
+
+<br>
+
+<img src="./docs/controlnet.jpg" width="1080"/>
+
+<br>
 
 ## Acknowledgement 🍻
 
