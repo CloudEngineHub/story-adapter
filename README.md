@@ -151,7 +151,7 @@ python run.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path yo
 
 <br>
 
-<img src="./docs/comic1.png" width="1080"/>
+<img src="./docs/story_fast.jpg" width="1080"/>
 
 <br>
 
