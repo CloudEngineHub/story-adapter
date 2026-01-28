@@ -148,7 +148,7 @@ python run_fast.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_pa
 
 ### Running with ControlNet
 ~~~
-python run_controlnet.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path your_path/IP-Adapter/sdxl_models/image_encoder --ip_ckpt your_path/IP-Adapter/sdxl_models/ip-adapter_sdxl.bin 
+python run_controlnet.py --base_model_path your_path/RealVisXL_V4.0 --image_encoder_path your_path/IP-Adapter/sdxl_models/image_encoder --ip_ckpt your_path/IP-Adapter/sdxl_models/ip-adapter_sdxl.bin --openpose_path your_path/openpose_root
 ~~~
 
 <img src="./docs/controlnet.jpg" width="1080"/>
